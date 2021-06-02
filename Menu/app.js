@@ -104,7 +104,7 @@ function displayMenuItems(menuItems){
             </article>`;
   });
   displayMenu = displayMenu.join('');
-  console.log(displayMenu);
+  //console.log(displayMenu);
   sectionCenter.innerHTML = displayMenu;
 }
 
@@ -122,8 +122,9 @@ function displayMenuButtons(){
             </button>`
   }).join('');
   container.innerHTML = categoryButtons;
-  const filterButtons = container.querySelectorAll('.filter-btn');
+
   // filter items
+  const filterButtons = container.querySelectorAll('.filter-btn');
   filterButtons.forEach(function(button){
     button.addEventListener('click', function(e){
       const category = e.currentTarget.dataset.id;
