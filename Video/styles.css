@@ -196,7 +196,8 @@ Video
 }
 .hide-preloader {
   z-index: -999;
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 
 header {
